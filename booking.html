@@ -3,11 +3,10 @@
     <head>
         <title>Booking</title>
         <link rel="stylesheet" href="styles02.css">
+        <script src="booking.js"></script>
     </head>
     <body>
-        
-
-    <form id="booking-form" >
+    <form id="booking-form" onsubmit="return validation()" >
         <div>
             <label for="tour-type">Country:</label>
             <select name="tour-type" id="tour-type">
@@ -31,7 +30,7 @@
         
         <div>
         <label for="num-travelers">Number of Travelers:</label>
-        <input type="number" id="num-travelers" name="num-travelers" min="1" required>
+        <input type="number" id="num-travelers" name="num-travelers" min="1" max="15" required>
         </div>
 
         <div>
@@ -43,6 +42,8 @@
         <label for="contact-phone">Contact Phone Number:</label>
         <input type="tel" id="contact-phone" name="contact-phone" pattern="[0-9]{10}" placeholder="123-456-7890" required>
         </div>
+
+        <button type="Submit">Submit</button>
        
        
     </form>
