@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Booking</title>
+        <link rel="stylesheet" href="styles02.css">
+    </head>
+    <body>
+        
+
+    <form id="booking-form" >
+        <div>
+            <label for="tour-type">Country:</label>
+            <select name="tour-type" id="tour-type">
+                <option value="indo">Indonesia</option>
+                <option value="japan">Japan</option>
+                <option value="swiss">Switzerland</option>
+            </select>
+        </div>
+        <div>
+        <label for="tour-type">Select Tour Group Type:</label>
+        <select id="tour-type" name="tour-type" required>
+            <option value="small-group">Small Group (10 – 15 people)</option>
+            <option value="standard-group">Standard Group (35 – 40 people)</option>
+        </select>
+        </div>
+
+        <div>
+        <label for="join-land">Do you want to buy flight tickets yourself?</label>
+        <input type="checkbox" id="join-land" name="join-land">
+        </div>
+        
+        <div>
+        <label for="num-travelers">Number of Travelers:</label>
+        <input type="number" id="num-travelers" name="num-travelers" min="1" required>
+        </div>
+
+        <div>
+        <label for="contact-name">Contact Name:</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+        </div>
+       
+        <div>
+        <label for="contact-phone">Contact Phone Number:</label>
+        <input type="tel" id="contact-phone" name="contact-phone" pattern="[0-9]{10}" placeholder="123-456-7890" required>
+        </div>
+       
+       
+    </form>
+    <footer>
+        <div id="student-info">
+            6733217221 | Ratapapop Sarapap
+        </div>
+    </footer>
+    </body>
+
+</html>
